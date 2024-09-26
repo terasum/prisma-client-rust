@@ -103,7 +103,7 @@ impl GeneratorMetadata {
                 .expect("Datamodel is invalid after being verified by CLI?!"),
         );
         let query_schema = Arc::new(schema::build(schema.clone(), true));
-        let dmmf = from_precomputed_parts(&query_schema);
+        let dmmf = from_precomputed_parts(&*query_schema);
 
         let output_str = engine_dmmf.generator.output.get_value();
         let root_output_path = Path::new(&output_str);

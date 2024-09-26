@@ -3,5 +3,6 @@
   "rust-analyzer.checkOnSave.enable": false,
   "conventionalCommits.scopes": [
     "codegen"
-  ]
+  ],
+  "rust-analyzer.checkOnSave": true
 }

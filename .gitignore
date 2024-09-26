@@ -8,3 +8,4 @@ dev.db
 node_modules
 .next
 .env
+.vscode/
